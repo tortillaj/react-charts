@@ -1,0 +1,20 @@
+.bar {
+  fill: skyblue;
+
+  &:hover {
+    fill: lightblue;
+  }
+
+  &--is-clickable {
+    cursor: pointer;
+  }
+
+}
+
+.bar.orange {
+  fill: darkorange;
+
+  &:hover {
+    fill: coral;
+  }
+}

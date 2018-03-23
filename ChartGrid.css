@@ -1,0 +1,6 @@
+.grid .domain {
+  stroke: #ffffff; }
+
+.grid line {
+  stroke: #eeeeee;
+  stroke-dasharray: 1; }

@@ -1,0 +1,9 @@
+.chart-tooltip {
+  transition: all 0.05s ease; }
+  .chart-tooltip__shadow {
+    fill: #fbb040; }
+  .chart-tooltip__label-text {
+    font-size: 13px;
+    fill: rgba(0, 0, 0, 0.87);
+    text-anchor: middle;
+    alignment-baseline: middle; }

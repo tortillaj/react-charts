@@ -1,0 +1,14 @@
+.chart-tooltip {
+  transition: all 0.05s ease;
+
+  &__shadow {
+    fill: gold;
+  }
+
+  &__label-text {
+    font-size: 13px;
+    fill: #2f2f2f;
+    text-anchor: middle;
+    alignment-baseline: middle;
+  }
+}
