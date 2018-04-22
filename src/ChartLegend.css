@@ -1,0 +1,26 @@
+.ChartLegend {
+  display: flex;
+  width: 100%;
+}
+.ChartLegend__item {
+  display: flex;
+  align-items: center;
+}
+.ChartLegend__color {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 2px;
+}
+.ChartLegend__label {
+  margin: 0 1em 0 0.2em;
+}
+.ChartLegend--vertical {
+  flex-direction: column;
+}
+.ChartLegend--vertical .ChartLegend__item + .ChartLegend__item {
+  margin-top: 0.2em;
+}
+.ChartLegend--horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+}

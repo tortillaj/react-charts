@@ -14,7 +14,7 @@ class ChartGrid extends Component {
     this.renderGrid()
   }
 
-  shouldRender = () => (this.props.height && !isNaN(this.props.height))
+  shouldRender = () => this.props.height && !isNaN(this.props.height)
 
   renderGrid = () => {
     if (!this.shouldRender()) return

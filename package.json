@@ -1,0 +1,59 @@
+{
+  "name": "react-charts",
+  "version": "1.0.0",
+  "description": "A set of reusable d3 charts as react components",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "css:build": "npm rebuild node-sass && node-sass-chokidar src/ -o src/ && npm run css:process",
+    "css:watch": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "css:process": "postcss 'src/**/*.css' --config postcss.config.js --replace --no-map",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tortillaj/react-charts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tortillaj/react-charts/issues"
+  },
+  "homepage": "https://github.com/tortillaj/react-charts#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "d3": "^5.1.0",
+    "lodash-es": "^4.17.8",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "recompose": "^0.27.0"
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
+    "node-sass-chokidar": "^1.2.2",
+    "postcss-cli": "^5.0.0",
+    "prettier": "^1.12.1"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.{js,jsx,json,css}": [
+        "npm run prettier --",
+        "git add"
+      ]
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "jsxBracketSameLine": true
+  }
+}

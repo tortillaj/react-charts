@@ -23,12 +23,7 @@ const ChartLegend = ({ data, layout, onLegendItemClick, onLegendItemMouseMove })
       {data &&
         data.map((d, i) => {
           return (
-            <div
-              key={i}
-              className="ChartLegend__item"
-              onClick={onLegendItemClick}
-              onMouseMove={onLegendItemMouseMove}
-            >
+            <div key={i} className="ChartLegend__item" onClick={onLegendItemClick} onMouseMove={onLegendItemMouseMove}>
               <div className={'ChartLegend__color ' + d.className} />
               <div className="ChartLegend__label">{d.label}</div>
             </div>

@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as d3 from 'd3'
 
-import ChartBarsRect from 'components/chart/ChartBarsRect'
-import ChartAxis from 'components/chart/ChartAxis'
-import ChartGrid from 'components/chart/ChartGrid'
-import ChartTooltip from 'components/chart/ChartTooltip'
+import ChartBarsRect from './ChartBarsRect'
+import ChartAxis from './ChartAxis'
+import ChartGrid from './ChartGrid'
+import ChartTooltip from './ChartTooltip'
 import {
   getLabeledAxis,
   getValuedAxis,
@@ -15,7 +15,7 @@ import {
   getValueGrid,
   getLabelGrid,
   getTooltipPositionAndLayout,
-} from 'utils/chartUtils'
+} from './utils'
 
 //
 // ChartBars renders a set of SVG

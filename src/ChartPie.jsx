@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as d3 from 'd3'
 
-import { getTooltipPositionAndLayout } from 'utils/chartUtils'
+import { getTooltipPositionAndLayout } from './utils'
 
-import ChartPieArc from 'components/chart/ChartPieArc'
-import ChartTooltip from 'components/chart/ChartTooltip'
+import ChartPieArc from './ChartPieArc'
+import ChartTooltip from './ChartTooltip'
 
 //
 // ChartPie renders a set of SVG

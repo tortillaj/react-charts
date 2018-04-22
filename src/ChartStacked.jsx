@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import * as d3 from 'd3'
 import { find, isEqual } from 'lodash-es'
 
-import ChartBarsRect from 'components/chart/ChartBarsRect'
-import ChartAxis from 'components/chart/ChartAxis'
-import ChartGrid from 'components/chart/ChartGrid'
-import ChartTooltip from 'components/chart/ChartTooltip'
-import ChartStackedLegend from 'components/chart/ChartStackedLegend'
+import ChartBarsRect from './ChartBarsRect'
+import ChartAxis from './ChartAxis'
+import ChartGrid from './ChartGrid'
+import ChartTooltip from './ChartTooltip'
+import ChartStackedLegend from './ChartStackedLegend'
 import {
   getLabeledAxis,
   getValuedAxis,
@@ -17,7 +17,7 @@ import {
   getValueGrid,
   getLabelGrid,
   getTooltipPositionAndLayout,
-} from 'utils/chartUtils'
+} from './utils'
 
 //
 // ChartStacked renders a set of SVG
